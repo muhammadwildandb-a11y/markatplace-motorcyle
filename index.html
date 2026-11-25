@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GARASI GEAR - Showroom jual beli motor second.">
+    <title>GARASI GEAR | Showroom Motor Second</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                GARASI <span>GEAR.</span>
+                <small>SECOND MOTOR SHOWROOM</small>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#motor">Katalog Motor</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+            </ul>
+
+            <a href="#kontak" class="nav-button">Hubungi Kami</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="hero-label">SHOWROOM MOTOR SECOND</span>
+            <h1>CARI MOTOR<br><span>IMPIANMU.</span></h1>
+            <p>
+                Pilihan motor second dengan harga bersahabat.
+                Temukan motor favoritmu bersama GARASI GEAR.
+            </p>
+            <a href="#motor" class="primary-button">JELAJAHI MOTOR →</a>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <section class="features">
+        <div class="feature-item">
+            <span>✓</span>
+            <div>
+                <h3>Pilihan Berkualitas</h3>
+                <p>Informasi kondisi kendaraan</p>
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <span>✓</span>
+            <div>
+                <h3>Harga Bersahabat</h3>
+                <p>Harga jelas dan transparan</p>
+            </div>
+        </div>
+
+        <div class="feature-item">
+            <span>✓</span>
+            <div>
+                <h3>Konsultasi Mudah</h3>
+                <p>Langsung melalui WhatsApp</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- KATALOG MOTOR -->
+    <section class="catalog" id="motor">
+        <div class="section-title">
+            <span class="subtitle">SECOND MOTOR COLLECTION</span>
+            <h2>KATALOG MOTOR <span>150CC</span></h2>
+            <p>Temukan motor second sesuai kebutuhan dan budget kamu.</p>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari motor, contoh: Honda CB150R..."
+            >
+        </div>
+
+        <div class="motor-container" id="motorContainer">
+
+            <!-- MOTOR 1 -->
+            <article class="motor-card" data-name="Honda CB150R Streetfire">
+                <div class="image-container">
+                    <img src="Gambar/HondaCbr150Streetfire.jpg" alt="Honda CB150R Streetfire">
+                    <span class="condition">SECOND</span>
+                </div>
+                <div class="motor-info">
+                    <span class="category">SPORT NAKED</span>
+                    <h3>Honda CB150R Streetfire</h3>
+                    <p class="year">Tahun keluaran 2022</p>
+                    <h4 class="price">Rp 18.500.000</h4>
+                    <div class="spec-list">
+                        <div><span>Tahun</span><b>2022</b></div>
+                        <div><span>Kilometer</span><b>12.000 KM</b></div>
+                        <div><span>Kapasitas mesin</span><b>149,16 cc</b></div>
+                        <div><span>Transmisi</span><b>Manual 6 percepatan</b></div>
+                        <div><span>Pendingin</span><b>Liquid Cooled</b></div>
+                        <div><span>Kondisi</span><b>Bekas</b></div>
+                        <div><span>Surat</span><b>Lengkap</b></div>
+                    </div>
+                    <button class="buy-button" onclick="beliMotor('Honda CB150R Streetfire 2022','Rp 18.500.000')">
+                        HUBUNGI PENJUAL VIA WA
+                    </button>
+                </div>
+            </article>
+
+            <!-- MOTOR 2 -->
+            <article class="motor-card" data-name="Yamaha Vixion 150">
+                <div class="image-container">
+                    <img src="Gambar/Vixion 150.jpg" alt="Yamaha Vixion 150">
+                    <span class="condition">SECOND</span>
+                </div>
+                <div class="motor-info">
+                    <span class="category">SPORT NAKED</span>
+                    <h3>Yamaha Vixion 150</h3>
+                    <p class="year">Tahun keluaran 2021</p>
+                    <h4 class="price">Rp 15.000.000</h4>
+                    <div class="spec-list">
+                        <div><span>Tahun</span><b>2021</b></div>
+                        <div><span>Kilometer</span><b>15.000 KM</b></div>
+                        <div><span>Kapasitas mesin</span><b>149,8 cc</b></div>
+                        <div><span>Transmisi</span><b>Manual 5 percepatan</b></div>
+                        <div><span>Pendingin</span><b>Liquid Cooled</b></div>
+                        <div><span>Kondisi</span><b>Bekas</b></div>
+                        <div><span>Surat</span><b>ContohLengkap</b></div>
+                    </div>
+                    <button class="buy-button" onclick="beliMotor('Yamaha Vixion 150 2021','Rp 15.000.000')">
+                        HUBUNGI PENJUAL VIA WA
+                    </button>
+                </div>
+            </article>
+
+            <!-- MOTOR 3 -->
+            <article class="motor-card" data-name="Suzuki GSX-S150">
+                <div class="image-container">
+                    <img src="Gambar/suzuki gsx-s150.jpg" alt="Suzuki GSX-S150">
+                    <span class="condition">SECOND</span>
+                </div>
+                <div class="motor-info">
+                    <span class="category">SPORT NAKED</span>
+                    <h3>Suzuki GSX-S150</h3>
+                    <p class="year">Tahun keluaran 2022</p>
+                    <h4 class="price">Rp 17.000.000</h4>
+                    <div class="spec-list">
+                        <div><span>Tahun</span><b>2022</b></div>
+                        <div><span>Kilometer</span><b>10.000 KM</b></div>
+                        <div><span>Kapasitas mesin</span><b>147,3 cc</b></div>
+                        <div><span>Transmisi</span><b>Manual 6 percepatan</b></div>
+                        <div><span>Pendingin</span><b>Liquid Cooled</b></div>
+                        <div><span>Kondisi</span><b>Bekas</b></div>
+                        <div><span>Surat</span><b>Lengkap</b></div>
+                    </div>
+                    <button class="buy-button" onclick="beliMotor('Suzuki GSX-S150 2022','Rp 17.000.000')">
+                        HUBUNGI PENJUAL VIA WA
+                    </button>
+                </div>
+            </article>
+
+            <!-- MOTOR 4 -->
+            <article class="motor-card" data-name="Honda CBR150R">
+                <div class="image-container">
+                    <img src="Gambar/Honda CBR150R.jpg" alt="Honda CBR150R">
+                    <span class="condition">SECOND</span>
+                </div>
+                <div class="motor-info">
+                    <span class="category">SPORT FAIRING</span>
+                    <h3>Honda CBR150R</h3>
+                    <p class="year">Tahun keluaran 2022</p>
+                    <h4 class="price">Rp 22.000.000</h4>
+                    <div class="spec-list">
+                        <div><span>Tahun</span><b>2022</b></div>
+                        <div><span>Kilometer</span><b>9.000 KM</b></div>
+                        <div><span>Kapasitas mesin</span><b>149,16 cc</b></div>
+                        <div><span>Transmisi</span><b>Manual 6 percepatan</b></div>
+                        <div><span>Pendingin</span><b>Liquid Cooled</b></div>
+                        <div><span>Kondisi</span><b>Bekas</b></div>
+                        <div><span>Surat</span><b>Lengkap</b></div>
+                    </div>
+                    <button class="buy-button" onclick="beliMotor('Honda CBR150R 2022','Rp 22.000.000')">
+                        HUBUNGI PENJUAL VIA WA
+                    </button>
+                </div>
+            </article>
+
+            <!-- MOTOR 5 -->
+            <article class="motor-card" data-name="Yamaha R15">
+                <div class="image-container">
+                    <img src="Gambar/Yamaha YZF-R15.jpg" alt="Yamaha R15">
+                    <span class="condition">SECOND</span>
+                </div>
+                <div class="motor-info">
+                    <span class="category">SPORT FAIRING</span>
+                    <h3>Yamaha YZF-R15</h3>
+                    <p class="year">Tahun keluaran 2021</p>
+                    <h4 class="price">Rp 24.000.000</h4>
+                    <div class="spec-list">
+                        <div><span>Tahun</span><b>2021</b></div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+                        <div><span>Kilometer</span><b>11.000 KM</b></div>
+                        <div><span>Kapasitas mesin</span><b>155 cc</b></div>
+                        <div><span>Transmisi</span><b>Manual 6 percepatan</b></div>
+                        <div><span>Pendingin</span><b>Liquid Cooled</b></div>
+                        <div><span>Kondisi</span><b>Bekas</b></div>
+                        <div><span>Surat</span><b>Lengkap</b></div>
+                    </div>
+                    <button class="buy-button" onclick="beliMotor('Yamaha YZF-R15 2021','Rp 24.000.000')">
+                        HUBUNGI PENJUAL VIA WA
+                    </button>
+                </div>
+            </article>
+
+            <!-- MOTOR 6 -->
+            <article class="motor-card" data-name="Yamaha Xabre 150">
+                <div class="image-container">
+                    <img src="Gambar/Yamaha Xabre 150.jpg" alt="Yamaha Xabre 150">
+                    <span class="condition">SECOND</span>
+                </div>
+                <div class="motor-info">
+                    <span class="category">SPORT NAKED</span>
+                    <h3>Yamaha Xabre 150</h3>
+                    <p class="year">Tahun keluaran 2020</p>
+                    <h4 class="price">Rp 16.000.000</h4>
+                    <div class="spec-list">
+                        <div><span>Tahun</span><b>2020</b></div>
+                        <div><span>Kilometer</span><b>17.000 KM</b></div>
+                        <div><span>Kapasitas mesin</span><b>149,8 cc</b></div>
+                        <div><span>Transmisi</span><b>Manual 6 percepatan</b></div>
+                        <div><span>Pendingin</span><b>Liquid Cooled</b></div>
+                        <div><span>Kondisi</span><b>Bekas</b></div>
+                        <div><span>Surat</span><b>Lengkap</b></div>
+                    </div>
+                    <button class="buy-button" onclick="beliMotor('Yamaha Xabre 150 2020','Rp 16.000.000')">
+                        HUBUNGI PENJUAL VIA WA
+                    </button>
+                </div>
+            </article>
+
+            <!-- MOTOR 7 -->
+            <article class="motor-card" data-name="Honda Sonic 150R">
+                <div class="image-container">
+                    <img src="Gambar/Honda Sonic 150R.jpg" alt="Honda Sonic 150R">
+                    <span class="condition">SECOND</span>
+                </div>
+                <div class="motor-info">
+                    <span class="category">UNDERBONE</span>
+                    <h3>Honda Sonic 150R</h3>
+                    <p class="year">Tahun keluaran 2021</p>
+                    <h4 class="price">Rp 14.000.000</h4>
+                    <div class="spec-list">
+                        <div><span>Tahun</span><b>2021</b></div>
+                        <div><span>Kilometer</span><b>13.000 KM</b></div>
+                        <div><span>Kapasitas mesin</span><b>149,16 cc</b></div>
+                        <div><span>Transmisi</span><b>Manual 6 percepatan</b></div>
+                        <div><span>Pendingin</span><b>Liquid Cooled</b></div>
+                        <div><span>Kondisi</span><b>Bekas</b></div>
+                        <div><span>Surat</span><b>Lengkap</b></div>
+                    </div>
+                    <button class="buy-button" onclick="beliMotor('Honda Sonic 150R 2021','Rp 14.000.000')">
+                        HUBUNGI PENJUAL VIA WA
+                    </button>
+                </div>
+            </article>
+
+            <!-- MOTOR 8 -->
+            <article class="motor-card" data-name="Yamaha Byson 150">
+                <div class="image-container">
+                    <img src="Gambar/yamaha Byson 150.jpg" alt="Yamaha Byson 150">
+                    <span class="condition">SECOND</span>
+                </div>
+                <div class="motor-info">
+                    <span class="category">SPORT NAKED</span>
+                    <h3>Yamaha Byson 150</h3>
+                    <p class="year">Tahun keluaran 2020</p>
+                    <h4 class="price">Rp 12.000.000</h4>
+                    <div class="spec-list">
+                        <div><span>Tahun</span><b>2020</b></div>
+                        <div><span>Kilometer</span><b>18.000 KM</b></div>
+                        <div><span>Kapasitas mesin</span><b>153 cc</b></div>
+                        <div><span>Transmisi</span><b>Manual 5 percepatan</b></div>
+                        <div><span>Pendingin</span><b>Air Cooled</b></div>
+                        <div><span>Kondisi</span><b>Bekas</b></div>
+                        <div><span>Surat</span><b>Lengkap</b></div>
+                    </div>
+                    <button class="buy-button" onclick="beliMotor('Yamaha Byson 150 2020','Rp 12.000.000')">
+                        HUBUNGI PENJUAL VIA WA
+                    </button>
+                </div>
+            </article>
+
+            <!-- MOTOR 9 -->
+            <article class="motor-card" data-name="Yamaha NMAX 155">
+                <div class="image-container">
+                    <img src="Gambar/Yamaha NMAX 155.jpg" alt="Yamaha NMAX 155">
+                    <span class="condition">SECOND</span>
+                </div>
+                <div class="motor-info">
+                    <span class="category">SCOOTER</span>
+                    <h3>Yamaha NMAX 155</h3>
+                    <p class="year">Tahun keluaran 2022</p>
+                    <h4 class="price">Rp 23.000.000</h4>
+                    <div class="spec-list">
+                        <div><span>Tahun</span><b>2022</b></div>
+                        <div><span>Kilometer</span><b>8.000 KM</b></div>
+                        <div><span>Kapasitas mesin</span><b>155 cc</b></div>
+                        <div><span>Transmisi</span><b>Otomatis CVT</b></div>
+                        <div><span>Pendingin</span><b>Liquid Cooled</b></div>
+                        <div><span>Kondisi</span><b>Bekas</b></div>
+                        <div><span>Surat</span><b>Lengkap</b></div>
+                    </div>
+                    <button class="buy-button" onclick="beliMotor('Yamaha NMAX 155 2022','Rp 23.000.000')">
+                        HUBUNGI PENJUAL VIA WA
+                    </button>
+                </div>
+            </article>
+
+            <!-- MOTOR 10 -->
+            <article class="motor-card" data-name="Honda PCX 150">
+                <div class="image-container">
+                    <img src="Gambar/Honda PCX 150.jpg" alt="Honda PCX 150">
+                    <span class="condition">SECOND</span>
+                </div>
+                <div class="motor-info">
+                    <span class="category">SCOOTER</span>
+                    <h3>Honda PCX 150</h3>
+                    <p class="year">Tahun keluaran 2020</p>
+                    <h4 class="price">Rp 20.000.000</h4>
+                    <div class="spec-list">
+                        <div><span>Tahun</span><b>2020</b></div>
+                        <div><span>Kilometer</span><b>16.000 KM</b></div>
+                        <div><span>Kapasitas mesin</span><b>149,3 cc</b></div>
+                        <div><span>Transmisi</span><b>Otomatis CVT</b></div>
+                        <div><span>Pendingin</span><b>Liquid Cooled</b></div>
+                        <div><span>Kondisi</span><b>Bekas</b></div>
+                        <div><span>Surat</span><b>Lengkap</b></div>
+                    </div>
+                    <button class="buy-button" onclick="beliMotor('Honda PCX 150 2020','Rp 20.000.000')">
+                        HUBUNGI PENJUAL VIA WA
+                    </button>
+                </div>
+            </article>
+
+            <!-- MOTOR 11 -->
+            <article class="motor-card" data-name="Yamaha Aerox 155">
+                <div class="image-container">
+                    <img src="Gambar/Yamaha Aerox 155.jpg" alt="Yamaha Aerox 155">
+                    <span class="condition">SECOND</span>
+                </div>
+                <div class="motor-info">
+                    <span class="category">SPORT SCOOTER</span>
+                    <h3>Yamaha Aerox 155</h3>
+                    <p class="year">Tahun keluaran 2022</p>
+                    <h4 class="price">Rp 22.000.000</h4>
+                    <div class="spec-list">
+                        <div><span>Tahun</span><b>2022</b></div>
+                        <div><span>Kilometer</span><b>9.000 KM</b></div>
+                        <div><span>Kapasitas mesin</span><b>155 cc</b></div>
+                        <div><span>Transmisi</span><b>Otomatis CVT</b></div>
+                        <div><span>Pendingin</span><b>Liquid Cooled</b></div>
+                        <div><span>Kondisi</span><b>Bekas</b></div>
+                        <div><span>Surat</span><b>Lengkap</b></div>
+                    </div>
+                    <button class="buy-button" onclick="beliMotor('Yamaha Aerox 155 2022','Rp 22.000.000')">
+                        HUBUNGI PENJUAL VIA WA
+                    </button>
+                </div>
+            </article>
+
+            <!-- MOTOR 12 -->
+            <article class="motor-card" data-name="Honda Vario 150">
+                <div class="image-container">
+                    <img src="Gambar/honda  vario 150.jpg" alt="Honda Vario 150">
+                    <span class="condition">SECOND</span>
+                </div>
+                <div class="motor-info">
+                    <span class="category">SCOOTER</span>
+                    <h3>Honda Vario 150</h3>
+                    <p class="year">Tahun keluaran 2021</p>
+                    <h4 class="price">Rp 17.000.000</h4>
+                    <div class="spec-list">
+                        <div><span>Tahun</span><b>2021</b></div>
+                        <div><span>Kilometer</span><b>14.000 KM</b></div>
+                        <div><span>Kapasitas mesin</span><b>149,3 cc</b></div>
+                        <div><span>Transmisi</span><b>Otomatis CVT</b></div>
+                        <div><span>Pendingin</span><b>Liquid Cooled</b></div>
+                        <div><span>Kondisi</span><b>Bekas</b></div>
+                        <div><span>Surat</span><b>Lengkap</b></div>
+                    </div>
+                    <button class="buy-button" onclick="beliMotor('Honda Vario 150 2021','Rp 17.000.000')">
+                        HUBUNGI PENJUAL VIA WA
+                    </button>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="emptyMessage" class="empty-message" hidden>
+            Motor yang kamu cari tidak ditemukan.
+        </p>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section class="about" id="tentang">
+        <div class="about-content">
+            <span class="subtitle">ABOUT GARASI GEAR</span>
+            <h2>TENTANG <span>KAMI</span></h2>
+            <p>
+                GARASI GEAR merupakan showroom jual beli motor
+                second yang menyediakan berbagai pilihan motor.
+                Kami berusaha memberikan informasi kendaraan
+                secara jelas agar pembeli dapat memilih motor
+                sesuai kebutuhan dan anggaran.
+            </p>
+        </div>
+    </section>
+
+    <!-- LOKASI PENJUAL -->
+    <section class="seller-location" id="lokasi">
+        <div class="location-content">
+            <span class="subtitle">OUR SHOWROOM LOCATION</span>
+            <h2>KUNJUNGI <span>SHOWROOM KAMI</span></h2>
+            <p>
+                Ingin melihat motor secara langsung?
+                Silakan kunjungi showroom GARASI GEAR.
+            </p>
+
+            <div class="address-card">
+                <h3>📍 jl kamandaka banyumas </h3>
+
+                <div class="address-detail">
+                    <span>Nama Showroom</span>
+                    <b>GARASI GEAR</b>
+                </div>
+
+                <div class="address-detail">
+                    <span>Alamat</span>
+                    <b>Jl kamandaka banyumas </b>
+                </div>
+
+                <div class="address-detail">
+                    <span>Jam Operasional</span>
+                    <b>08.00 - 17.00 WIB</b>
+                </div>
+
+                <a href="https://www.google.com/maps"
+                   target="_blank"
+                   rel="noopener"
+                   class="location-button">
+                    LIHAT LOKASI DI MAPS →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- KOMENTAR DAN ULASAN -->
+    <section class="reviews" id="ulasan">
+        <div class="section-title">
+            <span class="subtitle">CUSTOMER REVIEWS</span>
+            <h2>KOMENTAR & <span>ULASAN</span></h2>
+            <p>Bagikan pengalaman dan pendapatmu tentang GARASI GEAR.</p>
+        </div>
+
+        <div class="review-container">
+            <div class="review-form">
+                <h3>Berikan Komentarmu</h3>
+
+                <form id="commentForm">
+                    <label for="namaKomentar">Nama</label>
+                    <input type="text" id="namaKomentar"
+                           placeholder="Masukkan nama kamu"
+                           maxlength="50" required>
+
+                    <label for="ratingKomentar">Rating</label>
+                    <select id="ratingKomentar" required>
+                        <option value="5">★★★★★ - Sangat baik</option>
+                        <option value="4">★★★★ - Baik</option>
+                        <option value="3">★★★ - Cukup</option>
+                        <option value="2">★★ - Kurang</option>
+                        <option value="1">★ - Buruk</option>
+                    </select>
+
+                    <label for="isiKomentar">Komentar</label>
+                    <textarea id="isiKomentar"
+                              placeholder="Tuliskan komentar kamu..."
+                              rows="5" maxlength="500" required></textarea>
+
+                    <button type="submit" class="submit-review">
+                        KIRIM KOMENTAR
+                    </button>
+                </form>
+            </div>
+
+            <div class="review-list">
+                <h3>Ulasan Pengunjung</h3>
+                <div id="commentList">
+                    <p class="no-comment">
+                        Belum ada komentar. Jadilah yang pertama!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="contact" id="kontak">
+        <span class="subtitle">CONTACT US</span>
+        <h2>SUDAH MENEMUKAN MOTOR PILIHANMU?</h2>
+        <p>Hubungi kami untuk informasi lebih lanjut.</p>
+
+        <button onclick="hubungiAdmin()" class="primary-button">
+            HUBUNGI VIA WHATSAPP
+        </button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>GARASI <span>GEAR.</span></h2>
+        <p>SECOND MOTOR SHOWROOM</p>
+        <p>© 2026 GARASI GEAR. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
